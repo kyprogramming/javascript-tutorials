@@ -1,4 +1,3 @@
-
 // Implicit Coercion
 var num = 5;
 var str = "10";
