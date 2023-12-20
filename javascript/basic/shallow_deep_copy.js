@@ -35,6 +35,7 @@ const originalDeepObjLimitations = {
 // let newObjectDeepLimitations = JSON.parse(JSON.stringify(originalDeepObjLimitations)); // does not work for function data type.
 let newObjectDeepLimitations = deepCopy(originalDeepObjLimitations);
 
+// Recursive Functions  to get the deep copy.
 function deepCopy(obj) {
   if (null == obj || "object" != typeof obj) return obj;
   if (obj instanceof Array) {
