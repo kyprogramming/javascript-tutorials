@@ -1,53 +1,44 @@
 // VAR
-// var x  = 10;
+// var global =  10;
 // function example(){
-//     if(true){
-//         var z = 30;
-//         y = 20;
-//         y = 40;
+//     var local;
+//      local = 20;
+//      local = 30;
+//      local = 40;
+
+//     if(true) {
+//         var block = 30;
 //     }
-//     console.log(y);
-//     var y ;
+//     console.log('local', local);
 // }
-// // console.log(window.x);
-// // console.log(y);
-// // console.log(z);
+// console.log("global", window.global);
+// example();
+
+// LET
+// let script =  10;
+// function example(){
+//     let local;
+//     if(true) {
+//         let block = 30;
+//     }
+//     console.log('block', block);
+// }
+// console.log("global", window.script);
 // example();
 
 
-// // LET 
-// let x  = 10;
-// function example(){
-//     let y;
-//      y = 20;
-//      y = 30;
-//      y = 40;
-//     if(true){
-//         let z = 30;
-//         console.log(z);
-//     }
-//     console.log(y);
-// }
-// // console.log(window.x);
-// // console.log(y);
-// // console.log(z);
-// example();
-
-
-// CONST 
-const x  = 10;
+// CONST
+const script =  10;
 function example(){
-    const y = 20;
-    y = 40; 
-    if(true){
-        const z = 30;
-        console.log(z);
+    
+    if(true) {
+        const block = 30;
     }
-    console.log(y);
+    console.log("local", local);
+    const local  = 20;
 }
-// console.log(window.x);
-// console.log(y);
-// console.log(z);
+console.log("global", script);
 example();
+
 
 
